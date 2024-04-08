@@ -47,7 +47,7 @@ body{
 /*ESTILOS ESCRITORIO PARA PAGINA Registrarse */
 .bodyRegistrarse{
     height: 100vh;
-    background:linear-gradient(to right top, #24242473,#24242473),url("/assets/img/kiss_6.jpeg");
+    background:linear-gradient(to right top, #24242473,#24242473),url("../assets/img/kiss_6.jpeg");
     background-size: cover;
     background-position: center;
     .headerRegistrarse{
