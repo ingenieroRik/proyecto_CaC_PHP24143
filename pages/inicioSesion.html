@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión | CAC-MOVIES</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="stylesheet" href="../css/index.css">
+   
     <link rel="stylesheet" href="../css/register.css">
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c0e6f14933.js" crossorigin="anonymous"></script>
@@ -27,8 +27,8 @@
             <!--pongo get ya que en github pages da error el method post-->
             <form action="" method="get">
                 <h2 class="tituloRegistrarse">Iniciar Sesión</h2>
-                <div>
-                    <input type="email" placeholder="Email" id="email" name="email">
+                <div >
+                    <input  class="inputData" type="email" placeholder="Email" id="email" name="email">
                     <div class="error-text"></div>
                 </div>
                
@@ -36,7 +36,7 @@
 
                 <div class= "password_eye" >
                     <!-- Campo de contraseña -->
-                    <input type="password" placeholder="Contraseña" required id="password" name="password">
+                    <input  class="inputData"  type="password" placeholder="Contraseña" required id="password" name="password">
                     <!-- Icono para alternar visibilidad de la contraseña -->
                     <i id="toggleIcon" class="fa fa-eye ojo" onclick="verPassword()"></i>
                 </div>
@@ -69,5 +69,5 @@
           }
         }
       </script>
-    <script src="../js/valida_iniciosesion.js"></script>
+   
 </body>

@@ -6,13 +6,7 @@
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
-@keyframes tilt-n-move-shaking {
-    0% { transform: translate(0, 0) rotate(0deg); }
-    25% { transform: translate(5px, 5px) rotate(5deg); }
-    50% { transform: translate(0, 0) rotate(0eg); }
-    75% { transform: translate(-5px, 5px) rotate(-5deg); }
-    100% { transform: translate(0, 0) rotate(0deg); }
-}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -41,9 +35,6 @@ body{
 
 
 
-
-
-
 /*ESTILOS ESCRITORIO PARA PAGINA Registrarse */
 .bodyRegistrarse{
     height: 100vh;
@@ -68,7 +59,8 @@ body{
     .main{
          /*seccion de registrarse.html*/
         .seccionRegistrarse{
-            background-color:transparent;
+           
+           
             width: 30%;
             margin:0 auto;
             border: 1px solid var(--color-principal);
@@ -90,8 +82,9 @@ body{
             form{
                 width: 100%;
                 padding:40px;
-                
-                input:not(.check,.boton),select{
+               
+                    
+                .inputData{
                     width: 100%;
                     margin-bottom: 20px;
                     height: 40px;
@@ -99,12 +92,15 @@ body{
                     font-size: 1.2rem;
                     border-radius: 20px;
                     border: 2px solid var(--color-principal);
-                    background-color:transparent;
+                    background-color:transparent ;
                     text-align: center;
                     outline: none;
                     color:lightskyblue;
+                    
                    
                 }
+              
+             
                 .terminos{
                     font-size: 0.8rem;
                     display: flex;
@@ -171,7 +167,7 @@ body{
                 width: 100%;
                 text-align: center;
               
-                input:not(.check,.boton),select{
+                .inputData{
                     width: 80%;
                     height: 35px;
                     font-size: 1rem;
