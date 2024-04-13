@@ -56,6 +56,9 @@ body{
             }
         }
     }
+
+    
+    
     .main{
          /*seccion de registrarse.html*/
         .seccionRegistrarse{
@@ -95,11 +98,11 @@ body{
                     background-color:transparent ;
                     text-align: center;
                     outline: none;
-                    color:lightskyblue;
-                    
-                   
+                    color:lightskyblue;                   
                 }
-              
+                ::placeholder {
+                    color: lightskyblue; /* Cambia el color del texto del placeholder a rojo */
+                }
              
                 .terminos{
                     font-size: 0.8rem;
