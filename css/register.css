@@ -98,12 +98,27 @@ body{
                     background-color:transparent ;
                     text-align: center;
                     outline: none;
-                    color:lightskyblue;                   
+                    color:white;
+                    font-weight: 900;               
                 }
                 ::placeholder {
-                    color: lightskyblue; /* Cambia el color del texto del placeholder a rojo */
+                    color: white; /* Cambia el color del texto del placeholder a blanco */
+                    font-weight: 100;
                 }
-             
+                .pais{
+                    color:gray;
+                }
+                .pais::placeholder{
+                    color: white;
+                }
+                .error-text{
+                    color: orange;
+                    font-size: 0.8rem;
+                    margin-top:0px;
+                    margin-bottom: 20px;
+                    margin-left: 5px;
+                    text-align: center;
+                }
                 .terminos{
                     font-size: 0.8rem;
                     display: flex;
@@ -112,6 +127,10 @@ body{
                     .textoCheck{
                         margin-left: 10px;
                     }
+                }
+                .error-terminos {
+                    margin-top: 18px;
+                    margin-left: 20px;
                 }
                 .boton{
                     width: 92%;
