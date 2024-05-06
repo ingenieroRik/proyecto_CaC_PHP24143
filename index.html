@@ -42,375 +42,58 @@
         </section>
 
         <hr>
+
+        <div id="app">
         <section data-aos="fade-up" data-aos-offset="400" data-aos-delay="100" data-aos-duration="1000" class="fotosTendencia">
             <h3 class="tituloSection">Las fotos de hoy y siempre</h3>
-            <div class="fotos">
-                <a href="./pages/detalle.html">
-                    <div class="foto">
-                    
-                        <img class="imgTendencia" src="./assets/img/kiss_21.jpg" alt="The Beekeeper" loading="kiss">
-                        
-                        <div class="tituloFoto">
-                            <h4>Viticus,Teatro de Flores, 2023 </h4>
-                        </div>
-                    
-                    </div>
-                </a>
-                <a href="./pages/detalle.html">
-                    <div class="foto">
-                    
-                        <img class="imgTendencia" src="./assets/img/wos_moron_2023.jpg" alt="Badland Hunters" loading="kiss">
-                       
-                        <div class="tituloFoto">
-                            <h4>Wos, Zona Rock Morón, 2023 </h4>
-                           
-                        </div>
-                    
-                    </div>
-                </a>
-                <a href="./pages/detalle.html">
-                    <div class="foto">
-                        
-                        <img class="imgTendencia" src="./assets/img/kiss_9.jpg" alt="The Marvels" loading="kiss">
-                        
-                        <div class="tituloFoto">
-                            <h4>Paul Stanley, Kiss, Masters of Rock, 2023</h4>
-                        </div>
-                    
-                    </div>
-                </a>
-                <a href="./pages/detalle.html">
-                    <div class="foto">
-                        
-                        <img class="imgTendencia" src="./assets/img/slash_cosquin_rock_2024.jpg" alt="Wonka" loading="kiss">
-                        
-                        <div class="tituloFoto">
-                                <h4>Slash, Cosquin Rock, 2024</h4>
+           
+            <!-- Itero sobre el array de personajes -->
+            <!-- Por cada personaje muestro su info asociada -->         
+                <div  class="fotos">                  
+                    <div v-for = "photo in photos">
+                        <div v-if="photo.id < 13">                           
+                            <a href="./pages/detalle.html">
+                                <div class="foto">                               
+                                    <img class="imgTendencia" :src="`https://fotos-juli.onrender.com/api/fotos/${photo.id}/img`" alt="photo" loading="kiss">                               
+                                    <div class="tituloFoto">
+                                        <h4>{{ photo.name }} </h4>
+                                    </div>                           
+                                </div>                           
+                            </a>
                         </div>
                     </div>
-                   
-                </a>
-                <a href="./pages/detalle.html">
-                    <div class="foto">
-                        
-                        <img class="imgTendencia" src="./assets/img/viticus_6.jpg" alt="Aquaman and the Lost Kingdom" loading="kiss">
-                        
-                        <div class="tituloFoto">
-                            <h4>Viticus, Teatro de Flores, 2023</h4>
-                        </div>
-                    
-                    </div>
-                </a>
-                <a href="./pages/detalle.html">
-                    <div class="foto">
-                        
-                        <img class="imgTendencia" src="./assets/img/blink182_lollapalooza_2024.jpg" alt="Migration" loading="kiss">
-                        
-                        <div class="tituloFoto">
-                            <h4>Blink 182, Lollapalooza, 2024</h4>
-                        </div>
-                        
-                    </div>
-                </a>
-                <a href="./pages/detalle.html">
-                    <div class="foto">
-                        
-                        <img class="imgTendencia" src="./assets/img/kiss_8.jpg" alt="Sixty Minutes" loading="kiss">
-                       
-                        <div class="tituloFoto">
-                            <h4>Gene Simmons,Kiss, Masters of Rock, 2023</h4>
-                        </div>
-                    
-                    </div>
-                </a>
-                <a href="./pages/detalle.html">
-                    <div class="foto">
-                        
-                        <img class="imgTendencia" src="./assets/img/kiss_3.jpg" alt="Wish" loading="kiss">
-                        
-                        <div class="tituloFoto">
-                            <h4>Kiss, Masters of Rock, 2023</h4>
-                        </div>
-                    
-                    </div>
-                </a>
-                <a href="./pages/detalle.html">
-                    <div class="foto">
-                        
-                        <img class="imgTendencia" src="./assets/img/scorpions_1.jpg" alt="The Masked Saint" loading="kiss">
-                        
-                        <div class="tituloFoto">
-                            <h4>Klauss Meine,Scorpions, Masters of Rock, 2023</h4>
-                        </div>
-                    
-                    </div>
-                </a>
-                <a href="./pages/detalle.html">
-                    <div class="foto">
-                        
-                        <img class="imgTendencia" src="./assets/img/scorpions_2.jpg" alt="Due Justice" loading="kiss">
-                        
-                        <div class="tituloFoto">
-                            <h4>Mathias Jabs, Scorpions, Masters of Rock, 2023</h4>
-                        </div>
-                    
-                    </div>
-                </a>
-                <a href="./pages/detalle.html">
-                    <div class="foto">
-                        
-                        <img class="imgTendencia" src="./assets/img/scorpions_3.jpg" alt="Orion and the Darke" loading="kiss">
-                        
-                        <div class="tituloFoto">
-                            <h4>Scorpions, Masters of Rock, 2023</h4>
-                        </div>
-                    
-                    </div>
-                </a>
-                <a href="./pages/detalle.html">
-                    <div class="foto">
-                    
-                        <img class="imgTendencia" src="./assets/img/deep_purple_1.jpg" alt="Genghis Khan" loading="kiss">
-                       
-                        <div class="tituloFoto">
-                            <h4>Ian Gillan, Deep Purple, Masters of Rock, 2023</h4>
-                        </div>
-                    
-                    </div>
-                </a>
-                
-            </div>
-          
-
+                </div>         
         </section>
-
-
-
-       
+                    
         <details class="fotosTendencias masTendencias">
            
                 <summary class="">
                     <div class=""></div>
                 </summary>
+             
+            <section data-aos="fade-up" data-aos-offset="400" data-aos-delay="100" data-aos-duration="1000" class="fotosTendencia">
+                <h3 class="tituloSection">Todas las Fotos</h3>
 
-           
-      
-        <section data-aos="fade-up" data-aos-offset="400" data-aos-delay="100" data-aos-duration="1000" class="fotosTendencia">
-            <h3 class="tituloSection">Mas Fotos</h3>
-            <div class="fotos">
-
-                <a href="">
-                    <div class="foto">
-                    
-                        <img class="imgTendencia" src="./assets/img/viticus_3.jpg" alt="viticus" loading="kiss">
-                       
-                        <div class="tituloFoto">
-                            <h4>Viticus,Teatro de Flores, 2023 </h4>
-                           
+                <!-- Itero sobre el array de personajes -->
+                <!-- Por cada personaje muestro su info asociada -->       
+                    <div  class="fotos">                 
+                        <div v-for = "photo in photos">
+                            <div v-if="photo.id > 0">                          
+                                <a href="./pages/detalle.html">
+                                    <div class="foto">                               
+                                        <img class="imgTendencia" :src="`https://fotos-juli.onrender.com/api/fotos/${photo.id}/img`" alt="photo" loading="kiss">                                   
+                                        <div class="tituloFoto">
+                                            <h4>{{ photo.name }} </h4>
+                                        </div>                               
+                                    </div>                               
+                                </a>
+                            </div>
                         </div>
-                    
-                    </div>
-                </a>
-                <a href="./pages/detalle.html">
-                    <div class="foto">
-                        
-                        <img class="imgTendencia" src="./assets/img/skay_cosquin_rock_2024.jpg" alt="The Marvels" loading="kiss">
-                        
-                        <div class="tituloFoto">
-                            <h4>Skay, Cosquin Rock, 2024</h4>
-                        </div>
-                    
-                    </div>
-                </a>
-                <a href="./pages/detalle.html">
-                    <div class="foto">
-                        
-                        <img class="imgTendencia" src="./assets/img/viticus_5.jpg" alt="Wonka" loading="kiss">
-                        
-                        <div class="tituloFoto">
-                                <h4>Viticus, Teatro de Flores, 2023</h4>
-                        </div>
-                    </div>
-                   
-                </a>
-                <a href="./pages/detalle.html">
-                    <div class="foto">
-                        
-                        <img class="imgTendencia" src="./assets/img/divididos_cosquin_rock_2024.jpg" alt="Aquaman and the Lost Kingdom" loading="kiss">
-                        
-                        <div class="tituloFoto">
-                            <h4>Ricardo Mollo, Divididos, Cosquín Rock, 2024</h4>
-                        </div>
-                    
-                    </div>
-                </a>
-                <a href="./pages/detalle.html">
-                <div class="foto">
-                    
-                    <img class="imgTendencia" src="./assets/img/arcade_fire_lollapalooza_2024.jpg" alt="Orion and the Darke" loading="kiss">
-                    
-                    <div class="tituloFoto">
-                        <h4>Arcade Fire, Lollapaloza, 2024</h4>
-                    </div>
-                
-                </div>
-                </a>
-                <a href="#">
-                <div class="foto">
-                
-                    <img class="imgTendencia" src="./assets/img/red_hot_chilli_peppers_river_2023.jpg" alt="Genghis Khan" loading="kiss">
-                   
-                    <div class="tituloFoto">
-                        <h4>Red Hot Chilli Peppers, Estadio River Plate, 2023</h4>
-                    </div>
-                
-                </div>
-                </a>
-
-                </a>
-                <a href="./pages/detalle.html">
-                <div class="foto">
-                
-                <img class="imgTendencia" src="./assets/img/viticus_6.jpg" alt="Aquaman and the Lost Kingdom" loading="kiss">
-                
-                <div class="tituloFoto">
-                    <h4>Viticus, Teatro de Flores, 2023</h4>
-                </div>
-            
-            </div>
-            </a>
-            <a href="./pages/detalle.html">
-            <div class="foto">
-                
-                <img class="imgTendencia" src="./assets/img/kiss_7.jpg" alt="Migration" loading="kiss">
-                
-                <div class="tituloFoto">
-                    <h4>Gene Simmons,Kiss, Masters of Rock, 2023</h4>
-                </div>
-                
-            </div>
-            </a>
-            <a href="./pages/detalle.html">
-            <div class="foto">
-                
-                <img class="imgTendencia" src="./assets/img/dua_lipa_campo_arg_de_polo_2022.jpg" alt="dua_lipa_campo_arg_de_polo_2022" loading="kiss">
-               
-                <div class="tituloFoto">
-                    <h4>Dua Lipa, Campo Argentino de Polo, 2022</h4>
-                </div>
-            
-            </div>
-            </a>
-            <a href="./pages/detalle.html">
-            <div class="foto">
-                
-                <img class="imgTendencia" src="./assets/img/kiss_3.jpg" alt="Wish" loading="kiss">
-                
-                <div class="tituloFoto">
-                    <h4>Kiss, Masters of Rock, 2023</h4>
-                </div>
-            
-            </div>
-            </a>
-            <a href="./pages/detalle.html">
-            <div class="foto">
-                
-                <img class="imgTendencia" src="./assets/img/la_vela_puerca_cosquin_rock_2024.jpg" alt="la_vela_puerca_cosquin_rock_2024" loading="kiss">
-                
-                <div class="tituloFoto">
-                    <h4>La Vela Puerca, Cosquín Rock, 2023</h4>
-                </div>
-            
-            </div>
-            </a>
-            <a href="./pages/detalle.html">
-            <div class="foto">
-                
-                <img class="imgTendencia" src="./assets/img/caballeros_de_la_quema_luna_park_2023.jpg" alt="caballeros_de_la_quema_luna_park_2023" loading="kiss">
-                
-                <div class="tituloFoto">
-                    <h4>Ivan Noble, Caballeros de la Quema, Luna Park, 2023</h4>
-                </div>
-            
-            </div>
-            </a>
-            <a href="./pages/detalle.html">
-                <div class="foto">
-                
-                <img class="imgTendencia" src="./assets/img/lali_velez_2023.jpg" alt="lali_velez_2023" loading="kiss">
-                
-                <div class="tituloFoto">
-                    <h4>Lali Espósito, Estadio Velez sarrsfield, 2023</h4>
-                </div>
-            
-                </div>
-            </a>
-            <a href="./pages/detalle.html">
-                <div class="foto">
-            
-                <img class="imgTendencia" src="./assets/img/tan_bionica_la_plata_2023.jpg" alt="tan_bionica_la_plata_2023" loading="kiss">
-               
-                <div class="tituloFoto">
-                    <h4>Chano, Tan Biónica, La Plata,  2023</h4>
-                </div>
-            
-                </div>
-            </a>
-            <a href="./pages/detalle.html">
-                <div class="foto">
-            
-                <img class="imgTendencia" src="./assets/img/rosalia_movistar_arena_2022.jpg" alt="rosalia_movistar_arena_2022" loading="kiss">
-               
-                <div class="tituloFoto">
-                    <h4>Rosalía, Movistar Arena, 2022</h4>
-                </div>
-            
-                </div>
-            </a>
-            <a href="./pages/detalle.html">
-                <div class="foto">
-            
-                <img class="imgTendencia" src="./assets/img/catriel_auditorio_oeste_2022.jpg" alt="catriel_auditorio_oeste_2022" loading="kiss">
-               
-                <div class="tituloFoto">
-                    <h4>Catriel, Auditorio Oeste, 2022</h4>
-                </div>
-            
-                </div>
-            </a>
-            <a href="./pages/detalle.html">
-                <div class="foto">
-            
-                <img class="imgTendencia" src="./assets/img/maria_becerra_festival_equal_2023.jpg" alt="maria_becerra_festival_equal_2023" loading="kiss">
-               
-                <div class="tituloFoto">
-                    <h4>María Becerra, Festival Equal Bs As, 2023</h4>
-                </div>
-            
-                </div>
-            </a>
-            <a href="./pages/detalle.html">
-                <div class="foto">
-            
-                <img class="imgTendencia" src="./assets/img/ghost_movistar_arena_2023.jpg" alt="ghost_movistar_arena_2023" loading="kiss">
-               
-                <div class="tituloFoto">
-                    <h4>Ghost, Movistar Arena, 2023</h4>
-                </div>
-            
-                </div>
-            </a>
-
-
-        </div>
-        </section>
-
- 
+                    </div>          
+            </section>
         </details>
 
-
-
-
+    </div>
 
         <hr>
         <section data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="2000" class="fotosAclamadas">
@@ -473,5 +156,7 @@
     <script>
     AOS.init();
     </script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/api.js"></script>
 </body>
 </html>
