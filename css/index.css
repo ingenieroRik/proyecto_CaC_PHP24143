@@ -480,7 +480,15 @@ body{
                 text-decoration: none;
                 color:#ffffff;
                 font-weight: 700;
-                font-size: 1.2rem;
+                font-size: 1.1rem;
+                padding: 0.5rem 1rem;
+                /* Agregar efecto de botón presionado */
+                transition: transform 0.3s, box-shadow 0.3s;
+                &:hover {
+                    transform: scale(0.95);
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    border-radius: 5px;
+                }
             }
             .administradorFotos{
                 background-color: #181419;
@@ -496,8 +504,26 @@ body{
         right: 20px;
         color: white;
         cursor: pointer;
+        margin-bottom: 15px;
     }
 }
+.powered-by{
+
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--granite-gray);
+    padding-bottom: 10px;
+  }
+  .powered-by:hover {
+    
+    color:var(--color-principal);
+    
+  }
+
+
+
+
 /*ESTILOS FOOTER ---        PARA CELULAR Y TABLET CHICA*/
 @media (max-width: 768px) {
     .footer{
