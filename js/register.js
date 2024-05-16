@@ -1,13 +1,9 @@
 document.addEventListener('DOMContentLoaded', () =>{
 
- 
-  
-  
-  
-   
+  const form = document.querySelector('form');
+
   /****************************** para registrar usuario ************************************************ */
   
-
   let botonEnvioReg = document.querySelector("#btn-reg-user");
   let inputNombre = document.querySelector("#nombre");
   let inputApellido = document.querySelector("#apellido");
@@ -160,7 +156,10 @@ document.addEventListener('DOMContentLoaded', () =>{
                 return re.test(email);
                 }
 
-})
+                
+
+
+});
                   
         
     
