@@ -3,7 +3,7 @@ const { createApp } = Vue  //creo un objeto VUE llamdo createApp
 createApp({
     data() {
 return {
-    url: 'https://fotos-juli.onrender.com/api/fotos/',
+    url: 'https://api-fotos-juli.onrender.com/api/fotos/',
     //url: 'https://rickandmortyapi.com/api/character/',
     photos: [],
  
