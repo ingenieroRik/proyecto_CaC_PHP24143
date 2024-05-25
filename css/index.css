@@ -324,9 +324,14 @@ body{
                  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
              }
         }     
-    }   
+    } 
     }
-
+    .tituloSection{
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
     .masTendencias{      
         summary{
            font-size: 3rem;
@@ -336,46 +341,50 @@ body{
           }          
         }
 
-    .fotosAclamadas{
-        width:80%;
-        margin: 0 auto;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom:60px;
-        .tituloSection{
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 40px;
-        }
-        .aclamadas{
-            overflow-x: scroll;
-            overflow-y: hidden;
-            width: 100%;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            padding: 0px 0px 40px 0px;
-            .fotoItem{
-                border-radius: 25px;
-                width: 200px;
-                height: 200px;
-                min-width: 170px;
-                font-size: 20px;
-                cursor: pointer;
-                margin-left: 30px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-               
-                .imgAclamada{
-                    border-radius: 5%;
-                    width: 95%;
-                    height: 95%;
-                    object-fit: cover;
-                }               
-            }                 
-        }  
+   
+
+.fotosAclamadas{
+    width:80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom:60px;
 }
+    .tituloSection{
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+
+.aclamadas{
+   
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 0px 40px 0px;
+}
+.fotoItem{
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
+    min-width: 170px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.imgAclamada{
+    border-radius: 5%;
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+}    
+
 
 @media (max-width: 768px) {
     .main{
@@ -462,6 +471,7 @@ body{
     }   
 }
 
+
 /*ESTILOS FOOTER    --  PARA PC DE ESCRITORIO */
 .footer{
     background-color:var(--color-principal);
@@ -494,20 +504,8 @@ body{
                 }
             }
 
-            /*
-            .linkNav{
-                text-decoration: none;
-                color:#ffffff;
-                font-weight: 700;
-                font-size: 1.1rem;
-                padding: 0.5rem 1rem;
-                /* Agregar efecto de botón presionado */
-                transition: transform 0.3s, box-shadow 0.3s;
-                &:hover {
-                    transform: scale(0.95);
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-                    border-radius: 5px;
-                }
+          
+               
             }
             */
             .administradorFotos{
